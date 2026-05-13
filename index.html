@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="abbas.css" />
+    <script src="abbas.js"></script>
+  </head>
+
+  <body>
+    <div id="contain">
+      <div id="top">
+        <p>
+          <span>Informasjon er : <br><br></span>
+          Du har fire spørsmål å svare på, og svarene vil løse en gåte. <br>
+          Du tar de første bokstavene i hvert svar, som vil danne koden.
+        </p>
+        <ul>
+          <li class="no-dot"><span>Gåter er :<br><br></span></li>
+          <li>Jeg er i alt og ingenting. Hvem er jeg?</li>
+          <li>
+            Hvis du har meg, vil du dele meg. Hvis du deler meg, har du meg
+            ikke. Hva er jeg?
+          </li>
+          <li>
+            Jeg har et ansikt, men jeg har ingen armer eller ben. Hva er jeg?
+          </li>
+          <li>
+            Jeg mister alltid hodet om morgenen, 
+            men jeg får det tilbake om natten. Hva er jeg?
+          </li>
+          
+        </ul>
+      </div>
+
+      <div id="mid">
+        <p id="message"></p>
+        <input
+          type="text"
+          id="abbas"
+          placeholder="Sett inn kode"
+          autocomplete="off"
+        />
+
+        <button id="openbtn" onclick="gate()">Åpen</button>
+      </div>
+
+      <div id="ned">
+        <!--  <button id="btn" onclick="tilbake()">Tilbake</button> -->
+      </div>
+    </div>
+  </body>
+</html>
